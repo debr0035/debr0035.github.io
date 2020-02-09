@@ -3,21 +3,24 @@ Body{
     font-family: 'Montserrat', sans-serif;
     
 }
-
+/* D logo position */
 .logo img{
     border-radius: 4px;
   padding: 5px;
   width: 100px;
 } 
 
+/* title and sub title*/
+.flex-container{
+    flex:wrap; 
+ }
+
 h1{
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: bold;   
 } 
 
-h2{
-    text-align: center;
-}
+
 /*Contact form stuff*/
 .contact-form{ 
     background-color:#FFFFFF;
@@ -92,17 +95,15 @@ b{
     color:#FF8480;
 } 
 
+/* Icons placement */
 .icons{
-   margin-left: 20%;
-   margin-right: 20%;
-   display: grid;
-        grid-auto-flow: column;
-        grid-row-gap: 50%;
-
+grid-auto-flow: row;
 }
 
+/* Tablet view */
 @media screen and (min-width: 40rem){
 
+/* Conatct forms */
     .contact-form{
         margin: auto;
         margin-left: 20%;
@@ -119,39 +120,50 @@ b{
         width: 300px;
         margin-left: 5%;
     }
+
+    /* Icons placement */
+    .icons{
+        text-align: center;
+        display: grid;
+grid-auto-flow: column;
+grid-column-gap: 5px;
+    }
 }
 
+/* Desktop view */
 @media screen and (min-width: 60rem){
-    body{
-        background-color: pink;
-    }
-
+    
+    /* Scooter image placement */
     .scooter img{
-        max-width: 35%;
-        float: right;
-        margin-right: 40%;
-        margin-bottom: 10%;
-        
+    flex: row;
+    float:left;
+    width: 35%;   
     }
-.contact-form{
-    display: table;
-    margin-left: 70%;
-    margin-bottom: 20px;
-    
-} 
-.form2{
-    display: table;
-}
 
-.icons{
+    /* contact forms */
+    .contact-form{
+    display: flex;
+    flex-wrap: wrap;
+   } 
+
+    a button{
+    width: 100%;
    display: inline-block;
-margin-left:70%;
-margin-bottom: 10px;
-   
-}
-    
-.button2 button{
-    margin-right: 80%;
-}
+    }
+
+    .form2{
+    display: flex;  
+    }
+
+    .button2 button{
+        margin-right: 80%;
+        }
+
+    /* Icons placement */
+    .icons{
+   display: inline-block;
+    margin-left:70%;
+    margin-bottom: 10px;
+    }
    
 }
