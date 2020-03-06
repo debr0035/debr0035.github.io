@@ -1,0 +1,312 @@
+
+ol, ul {
+	list-style: none;
+}
+         /*****************************
+                     My css
+         ******************************/
+body{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto; 
+    position: relative;
+    
+}
+h1{
+    font-family: 'Courgette', cursive;
+    display: block;
+    font-size: 2rem;
+    padding: 10px;
+} 
+
+
+
+/*********
+                       top nav
+this is for the placement and color/style that you will see
+*********/
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li{
+    min-width: 120px;
+}
+nav a,
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: #000;
+    background-color: bisque;
+    padding: 10px 20px;
+    display: block;
+}
+nav a:hover,
+nav a:focus,
+nav a.active {
+    background-color: grey;
+    text-decoration: underline;
+}
+nav a:active {
+    background-color: green;
+}
+/*************
+                     bottom nav
+this is for the placement and color/style that you will see
+*************/
+.navbar { 
+    background-color: bisque;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+  }
+  .navbar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .navbar a.active {
+    background-color: grey;
+    color: black;
+    text-decoration: underline;
+  }
+  .navbar ul{
+      display: block;
+      padding: 0;
+      margin: 0 auto;
+  }
+
+.site-header{
+    
+    text-align: center;
+    padding:10px 0;
+    position: relative;
+    text-align: center;
+    
+}
+
+
+
+.main-content{
+    color: white;
+    padding:5px;
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.pa{
+display: block;
+color: black;
+padding: 30px;
+font-family: 'Handlee', cursive;
+} 
+
+.logo{
+    max-width: 120px;
+    border-radius: 50%;
+} 
+img{
+    max-width: 200px;
+    
+}
+.main-content{
+    display: block;
+}
+/************
+                            forms
+This is where i styles my forms with diffrent colors and diffrent fonts
+**********/
+
+h2{
+    display: block;
+    font-size: 1.5rem; 
+    font-family: 'Handlee', cursive;
+    padding: 30px;
+    text-decoration: underline;
+}
+body{
+    text-align: center;
+    font-family: 'Handlee', cursive;
+    
+}
+fieldset{
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+/*********
+                       Contact form buttons
+ This is where one of my animations are placed, for submit and reset button
+ ********/
+
+.submit {
+    margin: 1rem;
+    border: solid black;
+    width: 100px;
+    height: 35px;
+    background-color:grey;
+    color: #fff;
+    transition: 0.2s;
+  }
+  
+  .submit:hover {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .reset {
+    margin: 1rem;
+    border: solid black;
+    width: 100px;
+    height: 35px;
+    background-color:grey;
+    color: #fff;
+    transition: 0.2s;
+  }
+  
+  .reset:hover {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+/********
+   map
+*********/
+iframe{
+    width:400px;
+    padding:0;
+    height:450px; 
+}
+/********
+  my tables for my about page
+********/
+table{
+    margin: 20px 0;
+    border: 1px solid;
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+th,
+td{
+    border: 1px solid;
+    padding: 10px 20px;
+}
+
+th{
+    font-weight: bold;
+    color: grey;
+}
+caption{
+    font-size: 1.5rem;
+}
+.section7{
+    padding: 15px;
+}
+
+/*********
+ contact
+*********/
+h3{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding: 25px;
+}
+.contact{
+    border: solid black; 
+    
+}
+
+/*********
+Breakpoint
+*********/
+
+@media screen and (min-width:768px){
+    .main-content img,
+    .section4 img{
+        float: left;
+        margin:0;
+        padding: 15px;
+    }
+    .section5 img,
+    .section2 img{
+        float:right;
+        margin:0;
+        padding: 15px;
+    }
+    .table1,
+    .table2,
+    .section7 img{
+        float: left;
+        padding: 85px;
+        margin: -20px;
+    }
+    .table1{
+        width:350px;
+        
+    }
+    .section7 img{
+        width:300px;
+        height: 350px; 
+        padding: -10px;
+    }
+    .pa{
+        float: left;
+    }
+
+    iframe{
+        float: left;
+        width: 35%; /* three boxes (use 25% for four, and 50% for two, etc) */
+        padding: 90px;
+        
+    }
+    .contact{
+        float: left;
+        width: 35%; /* three boxes (use 25% for four, and 50% for two, etc) */
+        padding: 30px;
+        
+       
+    }
+    /*********
+    navigation
+    *********/
+    
+    nav{
+        border:0;
+        padding:10px;
+        margin: 0;
+    }
+    nav,
+    .navbar{
+        text-align:center; 
+        background-color: bisque;
+    }
+    nav ul li,
+    .navbar ul li{
+        display:inline-block;
+        text-decoration: none;
+        list-style:none;
+        
+    }
+    nav a,
+    .navbar a{
+        float:left;
+        text-decoration:none; 
+        
+    }
+}
