@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Baking with us</title>
+  </head>
+  <body> 
+
+      <!--I styled my h1 by centering the title using text-center on the page and making it uppercase by typing text-uppercase so it stands out and is more apealing to the eye-->
+    
+      <h1 class="text-center text-uppercase">Baking with us!</h1> 
+
+    <!--This is where I styled my nav bar so that it relates to the theme of my site i added colors such as gray and info to add color to my page -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6c757d;">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+<!--under my nav bar i added a jumbotron that takes up a good amount of space to explain a litle about my site and it just makes the site look organized to do that i amde a class of jombotron then made it so that it was fluid-->
+    
+<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class=" h2 display-4">Best cakes in town</h1>
+          <p class="lead">Flavour is the most imortant thing. Don’t skimp on the flavourings. A chocolate cake should be really chocolatey, an orange cake full of zest and zing. A fruit cake should be chock full of fruit and a tipsy cake should have booze oozing out of the seams. There should be not a single burnt corner, soda lump or flour lump to mar the taste.</p>
+        </div>
+      </div>
+
+      <!-- these are my grids where you would be able to chose what cake interests you so i styles it with a bg color and a text color and when using bootstap it will wrap around itself when making screen sizes smaller-->
+
+      <div class="container">
+            <div class="row">
+              <div class="col-sm bg-info mx-5 text-center text-light">
+                Brithday cake
+              </div>
+              <div class="col-sm bg-info mx-5 text-center text-light">
+                Fruit cake
+              </div>
+              <div class="col-sm bg-info mx-5 text-center text-light">
+                Wedding cake
+              </div>
+            </div>
+          </div>
+
+<!--these are my cards i use them to display more information on my page by adding an image and information. i used the class card group to have all my cards side by side with info that follows on the bottom this will also wrap itself when making screen sizes smaller-->
+
+            <div class="card-group mx-5">
+                    <div class="card">
+                      <img src="https://preppykitchen.com/wp-content/uploads/2018/04/Funfetti-cake-recipe-new.jpg" class="card-img-top " alt="cake-1">
+                      <div class="card-body">
+                        <h5 class="card-title">Birthday</h5>
+                        <p class="card-text">To celebrate life of everyone around us!</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 weeks ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://i.pinimg.com/originals/f9/62/8f/f9628fe466dbde785e709976000fe402.jpg" class="card-img-top" alt="cake-2">
+                      <div class="card-body">
+                        <h5 class="card-title">Fruit</h5>
+                        <p class="card-text">A disguise, looks like a healthy snack!</p>
+                        <p class="card-text"><small class="text-muted">Last updated A month ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSiqfEFVQt6ER-srBIuIyhlIOcsdYJruk-HC3lwcpG4HQ4CewpP" class="card-img-top" alt="cake-3">
+                      <div class="card-body">
+                        <h5 class="card-title">Wedding</h5>
+                        <p class="card-text">The day to celebrate love between 2 people!</p>
+                        <p class="card-text"><small class="text-muted">Last updated 2 months ago</small></p>
+                      </div>
+                    </div>
+                  </div> 
+    
+<!--here is my contact for that would be used to submit a pre order and this contact form contains alot of diffrent classes that will hepl space all the information from eachother as well as being able to clearly see where to put specific informations--> 
+
+<form>
+        <div class="form-row mx-5">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+        </div>
+        <div class="form-group mx-5">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="123 ablert st.">
+        </div>
+          <div class="form-group col-md-4 mx-5">
+            <label for="inputState">Which desert</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>B-day</option>
+              <option>Fruit</option>
+              <option>Wedding</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2 mx-5">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-outline-info mx-5">Submit order</button>
+      </form> 
+
+
+      <div class="alert alert-info text-center" role="alert">
+            Enjoy your cake!
+          </div>
+
+            
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
